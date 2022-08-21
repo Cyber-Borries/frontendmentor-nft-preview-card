@@ -1,0 +1,124 @@
+:root {
+  --Soft_blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --main_BG: hsl(217, 54%, 11%);
+  --card_BG: hsl(216, 50%, 16%);
+  --blue_line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --universal_Font: 18px; /*p*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main_BG);
+  padding-top: 100px;
+}
+
+.card {
+  background-color: var(--card_BG);
+  min-height: 500px;
+  width: 365px;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+
+.creator {
+  border-top: 1px solid var(--blue_line);
+}
+
+.card .img img {
+  width: 330px;
+  height: 50%;
+  border-radius: 2%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 17px;
+  margin-top: 20px;
+  position: relative;
+}
+
+h1,
+p,
+.creator {
+  color: var(--White);
+  font-family: "Outfit", sans-serif;
+  font-size: var(--universal_Font);
+  padding: 15px;
+}
+
+p {
+  color: var(--Soft_blue);
+}
+
+.description {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.time {
+  float: right;
+}
+
+.eth {
+  padding-right: 5px;
+}
+
+.clock {
+  padding-right: 5px;
+}
+
+.price {
+  color: var(--Cyan);
+  font-family: "Outfit", sans-serif;
+  font-size: var(--universal_Font);
+  padding: 15px;
+  font-style: bold;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.creator img {
+  aspect-ratio: 1;
+  width: 35px;
+  border: 1px white solid;
+  border-radius: 100%;
+}
+
+span {
+  color: var(--White);
+}
+
+span:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+h1:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.card .img img:hover {
+  cursor: pointer;
+}
+
+.attribution {
+  padding-top: 50px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
